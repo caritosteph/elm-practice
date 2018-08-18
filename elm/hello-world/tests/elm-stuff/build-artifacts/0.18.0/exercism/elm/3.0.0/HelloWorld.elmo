@@ -1,0 +1,9 @@
+var _exercism$elm$HelloWorld$helloWorld = function (name) {
+	return A2(
+		_elm_lang$core$Basics_ops['++'],
+		'Hello, ',
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			A2(_elm_lang$core$Maybe$withDefault, 'World', name),
+			'!'));
+};

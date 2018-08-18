@@ -1,0 +1,3 @@
+var _exercism$elm$Bob$hey = function (remark) {
+	return A2(_elm_lang$core$String$endsWith, '?', remark) ? 'Sure' : (A2(_elm_lang$core$String$endsWith, '!', remark) ? 'Whoa, chill out!' : (A2(_elm_lang$core$String$contains, '!?', remark) ? 'Calm down, I know what I\'m doing!' : (_elm_lang$core$Native_Utils.eq(remark, '') ? 'Fine. Be that way!' : 'Whatever.')));
+};

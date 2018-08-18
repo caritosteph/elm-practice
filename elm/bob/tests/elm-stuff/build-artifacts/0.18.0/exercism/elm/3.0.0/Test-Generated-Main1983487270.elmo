@@ -1,0 +1,22 @@
+var _exercism$elm$Test_Generated_Main1983487270$main = A2(
+	_exercism$elm$Test_Runner_Node$runWithOptions,
+	{
+		runs: _elm_lang$core$Maybe$Nothing,
+		report: _exercism$elm$Test_Reporter_Reporter$ConsoleReport(_exercism$elm$Console_Text$UseColor),
+		seed: _elm_lang$core$Maybe$Nothing,
+		processes: 4,
+		paths: {ctor: '[]'}
+	},
+	_elm_community$elm_test$Test$concat(
+		{
+			ctor: '::',
+			_0: A2(
+				_elm_community$elm_test$Test$describe,
+				'Tests',
+				{
+					ctor: '::',
+					_0: _exercism$elm$Tests$tests,
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
+		}))(_elm_lang$core$Json_Decode$value);

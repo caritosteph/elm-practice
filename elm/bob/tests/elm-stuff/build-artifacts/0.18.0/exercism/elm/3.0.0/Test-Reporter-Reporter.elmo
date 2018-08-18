@@ -1,0 +1,30 @@
+var _exercism$elm$Test_Reporter_Reporter$TestReporter = F4(
+	function (a, b, c, d) {
+		return {format: a, reportBegin: b, reportComplete: c, reportSummary: d};
+	});
+var _exercism$elm$Test_Reporter_Reporter$createReporter = function (report) {
+	var _p0 = report;
+	switch (_p0.ctor) {
+		case 'JsonReport':
+			return A4(_exercism$elm$Test_Reporter_Reporter$TestReporter, 'JSON', _exercism$elm$Test_Reporter_Json$reportBegin, _exercism$elm$Test_Reporter_Json$reportComplete, _exercism$elm$Test_Reporter_Json$reportSummary);
+		case 'ConsoleReport':
+			var _p1 = _p0._0;
+			return A4(
+				_exercism$elm$Test_Reporter_Reporter$TestReporter,
+				'CHALK',
+				_exercism$elm$Test_Reporter_Console$reportBegin(_p1),
+				_exercism$elm$Test_Reporter_Console$reportComplete(_p1),
+				_exercism$elm$Test_Reporter_Console$reportSummary(_p1));
+		default:
+			return A4(_exercism$elm$Test_Reporter_Reporter$TestReporter, 'JUNIT', _exercism$elm$Test_Reporter_JUnit$reportBegin, _exercism$elm$Test_Reporter_JUnit$reportComplete, _exercism$elm$Test_Reporter_JUnit$reportSummary);
+	}
+};
+var _exercism$elm$Test_Reporter_Reporter$RunInfo = F4(
+	function (a, b, c, d) {
+		return {paths: a, fuzzRuns: b, testCount: c, initialSeed: d};
+	});
+var _exercism$elm$Test_Reporter_Reporter$JUnitReport = {ctor: 'JUnitReport'};
+var _exercism$elm$Test_Reporter_Reporter$JsonReport = {ctor: 'JsonReport'};
+var _exercism$elm$Test_Reporter_Reporter$ConsoleReport = function (a) {
+	return {ctor: 'ConsoleReport', _0: a};
+};
