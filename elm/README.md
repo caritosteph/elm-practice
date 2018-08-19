@@ -3,9 +3,10 @@ Elm exercises' solution
 
 ## Exercises
 - [x] Hello World
+- [x] Difference of squares
 - [x] Bob
 - [ ] Earth (Orbit/Moon)
-- [ ] Twelve Days 
+- [ ] Twelve Days
 - [ ] Leap
 - [ ] Space Age
 - [ ] Sum Of Multiples
