@@ -1,0 +1,17 @@
+var _exercism$elm$DifferenceOfSquares$sumOfSquares = function (n) {
+	return _elm_lang$core$List$sum(
+		A2(
+			_elm_lang$core$List$map,
+			function (x) {
+				return x * x;
+			},
+			A2(_elm_lang$core$List$range, 1, n)));
+};
+var _exercism$elm$DifferenceOfSquares$squareOfSum = function (n) {
+	var s = _elm_lang$core$List$sum(
+		A2(_elm_lang$core$List$range, 1, n));
+	return s * s;
+};
+var _exercism$elm$DifferenceOfSquares$difference = function (n) {
+	return _exercism$elm$DifferenceOfSquares$squareOfSum(n) - _exercism$elm$DifferenceOfSquares$sumOfSquares(n);
+};

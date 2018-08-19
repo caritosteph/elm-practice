@@ -1,0 +1,164 @@
+var _exercism$elm$Tests$tests = A2(
+	_elm_community$elm_test$Test$describe,
+	'DifferenceOfSquares',
+	{
+		ctor: '::',
+		_0: A2(
+			_elm_community$elm_test$Test$describe,
+			'square the sum of the numbers up to the given number',
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_community$elm_test$Test$test,
+					'square of sum 5',
+					function (_p0) {
+						var _p1 = _p0;
+						return A2(
+							_elm_community$elm_test$Expect$equal,
+							225,
+							_exercism$elm$DifferenceOfSquares$squareOfSum(5));
+					}),
+				_1: {
+					ctor: '::',
+					_0: _elm_community$elm_test$Test$skip(
+						A2(
+							_elm_community$elm_test$Test$test,
+							'square of sum 10',
+							function (_p2) {
+								var _p3 = _p2;
+								return A2(
+									_elm_community$elm_test$Expect$equal,
+									3025,
+									_exercism$elm$DifferenceOfSquares$squareOfSum(10));
+							})),
+					_1: {
+						ctor: '::',
+						_0: _elm_community$elm_test$Test$skip(
+							A2(
+								_elm_community$elm_test$Test$test,
+								'square of sum 100',
+								function (_p4) {
+									var _p5 = _p4;
+									return A2(
+										_elm_community$elm_test$Expect$equal,
+										25502500,
+										_exercism$elm$DifferenceOfSquares$squareOfSum(100));
+								})),
+						_1: {ctor: '[]'}
+					}
+				}
+			}),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_elm_community$elm_test$Test$describe,
+				'sum the squares of the numbers up to the given number',
+				{
+					ctor: '::',
+					_0: _elm_community$elm_test$Test$skip(
+						A2(
+							_elm_community$elm_test$Test$test,
+							'sum of squares 5',
+							function (_p6) {
+								var _p7 = _p6;
+								return A2(
+									_elm_community$elm_test$Expect$equal,
+									55,
+									_exercism$elm$DifferenceOfSquares$sumOfSquares(5));
+							})),
+					_1: {
+						ctor: '::',
+						_0: _elm_community$elm_test$Test$skip(
+							A2(
+								_elm_community$elm_test$Test$test,
+								'sum of squares 10',
+								function (_p8) {
+									var _p9 = _p8;
+									return A2(
+										_elm_community$elm_test$Expect$equal,
+										385,
+										_exercism$elm$DifferenceOfSquares$sumOfSquares(10));
+								})),
+						_1: {
+							ctor: '::',
+							_0: _elm_community$elm_test$Test$skip(
+								A2(
+									_elm_community$elm_test$Test$test,
+									'sum of squares 100',
+									function (_p10) {
+										var _p11 = _p10;
+										return A2(
+											_elm_community$elm_test$Expect$equal,
+											338350,
+											_exercism$elm$DifferenceOfSquares$sumOfSquares(100));
+									})),
+							_1: {ctor: '[]'}
+						}
+					}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_community$elm_test$Test$describe,
+					'subtract sum of squares from square of sums',
+					{
+						ctor: '::',
+						_0: _elm_community$elm_test$Test$skip(
+							A2(
+								_elm_community$elm_test$Test$test,
+								'difference of squares 0',
+								function (_p12) {
+									var _p13 = _p12;
+									return A2(
+										_elm_community$elm_test$Expect$equal,
+										0,
+										_exercism$elm$DifferenceOfSquares$difference(0));
+								})),
+						_1: {
+							ctor: '::',
+							_0: _elm_community$elm_test$Test$skip(
+								A2(
+									_elm_community$elm_test$Test$test,
+									'difference of squares 5',
+									function (_p14) {
+										var _p15 = _p14;
+										return A2(
+											_elm_community$elm_test$Expect$equal,
+											170,
+											_exercism$elm$DifferenceOfSquares$difference(5));
+									})),
+							_1: {
+								ctor: '::',
+								_0: _elm_community$elm_test$Test$skip(
+									A2(
+										_elm_community$elm_test$Test$test,
+										'difference of squares 10',
+										function (_p16) {
+											var _p17 = _p16;
+											return A2(
+												_elm_community$elm_test$Expect$equal,
+												2640,
+												_exercism$elm$DifferenceOfSquares$difference(10));
+										})),
+								_1: {
+									ctor: '::',
+									_0: _elm_community$elm_test$Test$skip(
+										A2(
+											_elm_community$elm_test$Test$test,
+											'difference of squares 100',
+											function (_p18) {
+												var _p19 = _p18;
+												return A2(
+													_elm_community$elm_test$Expect$equal,
+													25164150,
+													_exercism$elm$DifferenceOfSquares$difference(100));
+											})),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
